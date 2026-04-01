@@ -1,0 +1,212 @@
+Bac, Couëron centre, 11
+Couëron centre, Bac, 11
+Couëron centre, Gare de Couëron, 5
+Gare de Couëron, Couëron centre, 5
+Couëron centre, La Chabossière, 16
+La Chabossière, Couëron centre, 16
+Couëron centre, Indre centre, 20
+Indre centre, Couëron centre, 20
+Indre centre, Gare d’Indre, 4
+Gare d’Indre, Indre centre, 4
+Gare d’Indre, Saint-Herblain centre, 7
+Saint-Herblain centre, Gare d’Indre, 7
+Gare de Couëron, Sautron centre, 30
+Sautron centre, Gare de Couëron, 30
+Gare de couëron, La Chabossière, 16
+La Chabossière, Gare de couëron, 16
+Sautron centre, Les Hauts de Couëron, 14
+Les Hauts de Couëron, Sautron centre, 14
+Saint-Herblain centre, La Chabossière, 12
+La Chabossière, Saint-Herblain centre, 12
+La Chabossière, Les Hauts de Couëron, 14
+Les Hauts de Couëron, La Chabossière, 14
+Les Hauts de Couëron, François Mitterand, 17
+François Mitterand, Les Hauts de Couëron, 17
+Saint-Herblain centre, François Mitterand, 8
+François Mitterand, Saint-Herblain centre, 8
+Sautron centre, Le Croisy, 20
+Le Croisy, Sautron centre, 20
+François Mitterand, le Zénith, 11
+le Zénith, François Mitterand, 11
+le Zénith, Le Croisy, 21
+Le Croisy, le Zénith, 21
+Indre centre, Roche Maurice, 20
+Roche Maurice, Indre centre, 20
+Saint-Herblain centre, Mendès-France Bellevue, 17
+Mendès-France Bellevue, Saint-Herblain centre, 17
+Roche Maurice, Gare de Chantenay, 11
+Gare de Chantenay, Roche Maurice, 11
+Roche Maurice, Mendès-France Bellevue, 9
+Mendès-France Bellevue, Roche Maurice, 9
+le Zénith, Mendès-France Bellevue, 16
+Mendès-France Bellevue, le Zénith, 16
+Mendès-France Bellevue, Gare de Chantenay, 11
+Gare de Chantenay, Mendès-France Bellevue, 11
+Le Croisy, Orvault centre, 15
+Orvault centre, Le Croisy, 15
+Orvault centre, Le Cardo, 17
+Le Cardo, Orvault centre, 17
+Le Croisy, Le Cardo, 18
+Le Cardo, Le Croisy, 18
+Le Croisy, Sillon de Bretagne, 14
+Sillon de Bretagne, Le Croisy, 14
+le Zénith, Sillon de Bretagne, 17
+Sillon de Bretagne, le Zénith, 17
+le Zénith, Parc de Procé, 20
+Parc de Procé, le Zénith, 20
+Sillon de Bretagne, Le Cardo, 18
+Le Cardo, Sillon de Bretagne, 18
+Sillon de Bretagne, Beauséjour, 11
+Beauséjour, Sillon de Bretagne, 11
+Beauséjour, Le Cardo, 18
+Le Cardo, Beauséjour, 18
+Beauséjour, Parc de Procé, 11
+Parc de Procé, Beauséjour, 11
+Mendès-France Bellevue, Parc de Procé, 14
+Parc de Procé, Mendès-France Bellevue, 14
+Gare de Chantenay, Parc de Procé, 17
+Parc de Procé, Gare de Chantenay, 17
+Gare de Chantenay, Gare Maritime, 11
+Gare Maritime, Gare de Chantenay, 11
+Gare Maritime, Pl. du Commerce, 9
+Pl. du Commerce, Gare Maritime, 9
+Parc de Procé, Pl. du Commerce, 13
+Pl. du Commerce, Parc de Procé, 13
+Parc de Procé, Rond-Point de Rennes, 9
+Rond-Point de Rennes, Parc de Procé, 9
+Le Cardo, Rond-Point de Rennes, 21
+Rond-Point de Rennes, Le Cardo, 21
+Le Cardo, Porte de la Chapelle, 10
+Porte de la Chapelle, Le Cardo, 10
+Le Cardo, La Chapelle-sur-Erdre centre, 25
+La Chapelle-sur-Erdre centre, Le Cardo, 25
+La Chapelle-sur-Erdre centre, La Chapelle Aulnay, 6
+La Chapelle Aulnay, La Chapelle-sur-Erdre centre, 6
+La Chapelle-sur-Erdre centre, Babinière, 29
+Babinière, La Chapelle-sur-Erdre centre, 29
+Porte de la Chapelle, Babinière, 7
+Babinière, Porte de la Chapelle, 7
+Porte de la Chapelle, Pont de la Tortière, 24
+Pont de la Tortière, Porte de la Chapelle, 24
+Rond-Point de Rennes, Pont de la Tortière, 9
+Pont de la Tortière, Rond-Point de Rennes, 9
+Rond-Point de Rennes, Pl. du Commerce, 14
+Pl. du Commerce, Rond-Point de Rennes, 14
+Pl. du Commerce, Pont de la Tortière, 15
+Pont de la Tortière, Pl. du Commerce, 15
+Pl. du Commerce, Gare Nord SNCF, 7
+Gare Nord SNCF, Pl. du Commerce, 7
+Gare Nord SNCF, Rond-point de Paris, 14
+Rond-point de Paris, Gare Nord SNCF, 14
+Rond-point de Paris, Pont de la Tortière, 6
+Pont de la Tortière, Rond-point de Paris, 6
+Babinière, Beaujoire, 24
+Beaujoire, Babinière, 24
+Babinière, Jonelière, 13
+Jonelière, Babinière, 13
+Jonelière, Pont de la Tortière, 18
+Pont de la Tortière, Jonelière, 18
+Gare Nord SNCF, Parc du Grand Blottereau, 18
+Parc du Grand Blottereau, Gare Nord SNCF, 18
+Rond-point de Paris, Parc du Grand Blottereau, 14
+Parc du Grand Blottereau, Rond-point de Paris, 14
+Rond-point de Paris, Haluchère-Batignolles, 9
+Haluchère-Batignolles, Rond-point de Paris, 9
+Beaujoire, Haluchère-Batignolles, 11
+Haluchère-Batignolles, Beaujoire, 11
+Beaujoire, Saint Joseph de Porterie, 9
+Saint Joseph de Porterie, Beaujoire, 9
+Saint Joseph de Porterie, La Chantrerie, 10
+La Chantrerie, Saint Joseph de Porterie, 10
+La Chantrerie, La Fleuriaye, 20
+La Fleuriaye, La Chantrerie, 20
+La Fleuriaye, Place du Vieux Cimetière, 11
+Place du Vieux Cimetière, La Fleuriaye, 11
+Place du Vieux Cimetière, La Belle Etoile, 17
+La Belle Etoile, Place du Vieux Cimetière, 17
+La Belle Etoile, Gare de Thouaré-sur-Loire, 12
+Gare de Thouaré-sur-Loire, La Belle Etoile, 12
+Gare de Thouaré-sur-Loire, Gare de Mauves sur Loire, 24
+Gare de Mauves sur Loire, Gare de Thouaré-sur-Loire, 24
+Gare de Thouaré-sur-Loire, La Minais, 11
+La Minais, Gare de Thouaré-sur-Loire, 11
+Place du Vieux Cimetière, La Madeleine, 20
+La Madeleine, Place du Vieux Cimetière, 20
+La Madeleine, La Minais, 11
+La Minais, La Madeleine, 11
+Haluchère-Batignolles, Sainte-Luce-sur-Loire centre, 17
+Sainte-Luce-sur-Loire centre, Haluchère-Batignolles, 17
+Haluchère-Batignolles, Pont de Bellevue, 25
+Pont de Bellevue, Haluchère-Batignolles, 25
+Sainte-Luce-sur-Loire, Pont de Bellevue, 9
+Pont de Bellevue, Sainte-Luce-sur-Loire, 9
+La Minais, Pont de Bellevue, 14
+Pont de Bellevue, La Minais, 14
+Parc du Grand Blottereau, Pont de Bellevue, 23
+Pont de Bellevue, Parc du Grand Blottereau, 23
+Pont de Bellevue, Porte de Goulaine, 13
+Porte de Goulaine, Pont de Bellevue, 13
+Porte de Goulaine, Grignon, 8
+Grignon, Porte de Goulaine,8
+Grignon, La Herdrie, 12
+La Herdrie, Grignon, 12
+La Herdrie, Gare de Vertou Nord, 11
+Gare de Vertou Nord, La Herdrie, 11
+Porte de Goulaine, Gare de Vertou Nord, 18
+Gare de Vertou Nord, Porte de Goulaine, 18
+Porte de Goulaine, Gare St Sébastien Pas enchantés, 12
+Gare St Sébastien Pas enchantés, Porte de Goulaine, 12
+Gare St Sébastien Pas enchantés, Gare de Vertou Nord, 24
+Gare de Vertou Nord, Gare St Sébastien Pas enchantés, 24
+Gare St Sébastien Pas enchantés, Porte de Vertou, 18
+Porte de Vertou, Gare St Sébastien Pas enchantés, 18
+Gare St Sébastien Pas enchantés, Gréneraie, 10
+Gréneraie, Gare St Sébastien Pas enchantés, 10
+Gare de Vertou Nord, Vertou centre, 10
+Vertou centre, Gare de Vertou Nord, 10
+Gare de Vertou centre, Porte de Vertou, 11
+Porte de Vertou, Gare de Vertou centre, 11
+Vertou centre, Porte de Vertou, 10
+Porte de Vertou, Vertou centre, 10
+Gréneraie, Porte de Vertou, 18
+Porte de Vertou, Gréneraie, 18
+Porte de Vertou, Porte de Rezé, 24
+Porte de Rezé, Porte de Vertou, 24
+Porte de Vertou, Trois Moulins, 19
+Trois Moulins, Porte de Vertou, 19
+Vertou centre, Sorinières centre, 28
+Sorinières centre, Vertou centre, 28
+Sorinières centre, Porte de Rezé, 8
+Porte de Rezé, Sorinières centre, 8
+Porte de Rezé, Trois Moulins, 11
+Trois Moulins, Porte de Rezé, 11
+Porte de Rezé, La Trocardière, 18
+La Trocardière, Porte de Rezé, 18
+Porte de Rezé, Neustrie, 24
+Neustrie, Porte de Rezé, 24
+Gréneraie, Pirmil, 5
+Pirmil, Gréneraie, 5
+Pirmil, Pl. du Commerce, 17
+Pl. du Commerce, Pirmil, 17
+Pirmil, Trois Moulins, 12
+Trois Moulins, Pirmil, 12
+Pirmil, Trentemoult, 15
+Trentemoult, Pirmil, 15
+Parc du Grand Blottereau, Palais des Sports de Beaulieu, 20
+Palais des Sports de Beaulieu, Parc du Grand Blottereau, 20
+Palais des Sports de Beaulieu, Hangar à Bananes, 14
+Hangar à Bananes, Palais des Sports de Beaulieu, 14
+Trois Moulins, La Trocardière, 14
+La Trocardière, Trois Moulins, 14
+La Trocardière, Trentemoult, 11
+Trentemoult, La Trocardière, 11
+La Trocardière, Neustrie, 10
+Neustrie, La Trocardière, 10
+Trentemoult, Neustrie, 12
+Neustrie, Trentemoult, 12
+Trentemoult, Bouguenais centre, 15
+Bouguenais centre, Trentemoult, 15
+Neustrie, Bouguenais centre, 12
+Bouguenais centre, Neustrie, 12
+Neustrie, Aéroport Nantes Atlantique, 11
+Aéroport Nantes Atlantique, Neustrie, 11
