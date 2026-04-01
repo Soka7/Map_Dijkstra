@@ -1,25 +1,39 @@
 from graphePondere import Graphe_D
-from dijkstra import getChemin
+from dijkstra import getPath
+
 import csv 
-g = Graphe_D()
 
-file : list = []
+def loadGraphe(filePath : str) -> Graphe_D:
+    """
+    Make a graph based on a csv file.
 
-with open('arrets.csv', newline='') as csvfile:
-    entry = csv.reader(csvfile, delimiter=',')
-    for i in entry:
-        if i[0][0] == ' ':
-            i[0] = i[0][1:]
-        if i[1][0] == ' ':
-            i[1] = i[1][1:]
-        if i[2][0] == ' ':
-            i[2] = i[2][1:]
-        file.append(i)
+    :param filePath: The relative path to the file
+    :type filePath: str
 
-for i in file:
-    g.ajouter_sommet(i[0])
-    g.ajouter_sommet(i[1])
-    g.ajouter_arc(i[0], i[1], int(i[2]))
+    :return: A graph with all the informations of the file
+    :rtype: Graphe_D
+    """
+    graph : Graphe_D = Graphe_D()
 
-print(getChemin(g, 'Bouguenais centre', 'Neustrie'))
+    fileContent : list = []
 
+    with open(filePath, newline = '') as csvfile:
+        file = csv.reader(csvfile, delimiter = ',')
+        for entry in file:
+            if entry[0][0] == ' ':
+                entry[0] = entry[0][1:]
+            if entry[1][0] == ' ':
+                entry[1] = entry[1][1:]
+            if entry[2][0] == ' ':
+                entry[2] = entry[2][1:]
+            fileContent.append(entry)
+
+    for link in fileContent:
+        graph.addLink(link[0], link[1], int(link[2]))
+
+    return graph
+
+g = loadGraphe("arrets.csv")
+print(getPath(g, "Le Cardo", "Le Croisy"))
+
+# :BUG: IT DOESN'T WORK FOR NAME THAT AREN'T IN THE ASCII TABLES like é,è,ë
