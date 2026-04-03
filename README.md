@@ -43,3 +43,5 @@ Python
 [Tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2QCjfv01qfK496bpc1K3SF?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
