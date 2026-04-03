@@ -2,9 +2,9 @@
 
 ![Dij](dijkstra.gif)
 
-<img src = "dijkstra.gif">
-
 # Dijkstra Map
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&background=FF000000&width=435&lines=Please+consider+checking+the+sources;And+upvoting+the+project+of+course)](https://git.io/typing-svg)
 
 # Carte interactive
 **Mp6 TermD**
