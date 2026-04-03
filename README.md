@@ -44,4 +44,4 @@ Python
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
 
-[![Spotify](https://img.shields.io/badge/Spotify-Playlist-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/2QCjfv01qfK496bpc1K3SF)
+[![folium](https://img.shields.io/badge/Folium-Docs-B63e36?style=for-the-badge&logo=spotify&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html)
