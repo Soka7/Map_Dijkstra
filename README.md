@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&background=FF000000&center=true&vCenter=true&width=500&height=75&lines=Dijkstra+Map;Please+consider+checking+the+sources;And+upvoting+the+project+of+course" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&background=626262FF&center=true&vCenter=true&width=500&height=75&lines=Dijkstra+Map;Please+consider+checking+the+sources;And+upvoting+the+project+of+course" alt="Typing SVG" /></a>
 </p>
 
 # Carte interactive
