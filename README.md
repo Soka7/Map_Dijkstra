@@ -1,7 +1,7 @@
 # Dijkstra Map
 
 # Carte interactive
-**Mp4 TermD**
+**Mp6 TermD**
 
 Algorithme de Dijkstra appliqué à une map [folium](https://python-visualization.github.io/folium/latest/getting_started.html)
 
