@@ -44,4 +44,4 @@ Python
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
 
-[![folium](https://img.shields.io/badge/Folium-Docs-#77B829?style=for-the-badge&logo=folium&logoColor=red)](https://python-visualization.github.io/folium/latest/getting_started.html)
+[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html)
