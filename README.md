@@ -35,4 +35,4 @@ Python
 # Modules
 [Tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
-# Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
+Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
