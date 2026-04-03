@@ -1,8 +1,6 @@
-[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html) [![Python](https://img.shields.io/badge/Python-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/)
+[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html) [![Python](https://img.shields.io/badge/Python-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/) [![Gif](https://img.shields.io/badge/Gif-Source-6D4C9F?style=for-the-badge&logo=monster&logoColor=white)](https://memgraph.com/docs/advanced-algorithms/deep-path-traversal)
 
 ![Dij](dijkstra.gif)
-
-https://memgraph.com/docs/advanced-algorithms/deep-path-traversal
 
 # Dijkstra Map
 
