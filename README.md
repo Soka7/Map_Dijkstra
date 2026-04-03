@@ -1,3 +1,5 @@
+[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html), [![folium](https://img.shields.io/badge/Folium-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html)
+
 # Dijkstra Map
 
 # Carte interactive
@@ -43,5 +45,3 @@ Python
 [Tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
-
-[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html)
