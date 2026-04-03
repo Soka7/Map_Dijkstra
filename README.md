@@ -2,6 +2,8 @@
 
 ![Dij](dijkstra.gif)
 
+<img style="border-radius: 10px", src = "dijkstra.gif">
+
 # Dijkstra Map
 
 # Carte interactive
