@@ -22,6 +22,13 @@ pip install -r requirements.txt
 ```
 [Thanks to](https://github.com/python-visualization/folium/blob/main/requirements.txt)
 
+### Basiques - dev
+```bash
+# Installer les dependances pour les devs
+pip install -r requirements - dev.txt
+```
+[Thanks to](https://github.com/python-visualization/folium/blob/main/requirements-dev.txt)
+
 ### Référence README pour une lecture (et une correction) agréable.
 ```bash
 https://github.com/mhucka/readmine/blob/main/README.md?plain=1
