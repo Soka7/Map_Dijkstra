@@ -1,4 +1,4 @@
-[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html), [![folium](https://img.shields.io/badge/Folium-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html)
+[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html) [![Python](https://img.shields.io/badge/Folium-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
 # Dijkstra Map
 
