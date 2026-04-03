@@ -2,7 +2,7 @@
 
 ![Dij](dijkstra.gif)
 
-<img style="border-radius: 10px", src = "dijkstra.gif">
+<img src = "dijkstra.gif">
 
 # Dijkstra Map
 
