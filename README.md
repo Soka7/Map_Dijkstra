@@ -1,7 +1,3 @@
-[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html) [![Python](https://img.shields.io/badge/Python-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/) [![Gif](https://img.shields.io/badge/Gif-Source-6D4C9F?style=for-the-badge&logo=monster&logoColor=white)](https://memgraph.com/docs/advanced-algorithms/deep-path-traversal) [![Spotify](https://img.shields.io/badge/Spotify-song-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/embed/track/5Vbmq6BqLmRzzIO6fu916a?utm_source=generator) [![Claude](https://img.shields.io/badge/Claude-IA_Anthropic-D97757?style=for-the-badge&logo=claude&logoColor=white)](https://claude.ai/login?from=logout)
-
-![Dij](dijkstra.gif)
-
 # Dijkstra Map
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&background=FF000000&width=435&lines=Please+consider+checking+the+sources;And+upvoting+the+project+of+course)](https://git.io/typing-svg)
@@ -47,5 +43,9 @@ Python
 
 # Modules
 [Tkinter](https://docs.python.org/fr/3/library/tkinter.html)
+
+[![folium](https://img.shields.io/badge/Folium-Docs-77B829?style=for-the-badge&logo=folium&logoColor=white)](https://python-visualization.github.io/folium/latest/getting_started.html) [![Python](https://img.shields.io/badge/Python-Docs-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/) [![Gif](https://img.shields.io/badge/Gif-Source-6D4C9F?style=for-the-badge&logo=monster&logoColor=white)](https://memgraph.com/docs/advanced-algorithms/deep-path-traversal) [![Spotify](https://img.shields.io/badge/Spotify-song-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/embed/track/5Vbmq6BqLmRzzIO6fu916a?utm_source=generator) [![Claude](https://img.shields.io/badge/Claude-IA_Anthropic-D97757?style=for-the-badge&logo=claude&logoColor=white)](https://claude.ai/login?from=logout)
+
+![Dij](dijkstra.gif)
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique
