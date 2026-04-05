@@ -6,6 +6,9 @@ from makeGraph import loadGraphe
 from graphePondere import Graphe_D
 from dijkstra import getPath
 import csv
+import geopy
+from geopy.geocoders import Nominatim
+from adresse import adresse_
 
 #Traceback (most recent call last):
 #  File "d:\Map_Dijkstra\IHM.py", line 18, in <module>
@@ -59,11 +62,31 @@ class UI:
         self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get()))
         self.send.grid(row = 2, column=0, sticky="w")
         
+        self.GestionAdresses = adresse_()
+        
+        self.rows = 0
+        self.cols = 1
+        
     def Display(self):
         self.fenetre.mainloop()
         
     def DisplayPath(self, dep, arr):
-        self.path = Label(text=str(getPath(loadGraphe("arrets.csv"), dep, arr)))
-        self.path.grid(row=1, column=1, sticky="w")
+        pa = getPath(loadGraphe("arrets.csv"), dep, arr)
+        chemin = pa[1]
+        self.path = Label(text=str(chemin), justify=LEFT)
+        self.rows += 1
+        self.path.grid(row=self.rows, column=self.cols, sticky="w")
+
+        for arrets in chemin:
+            try:
+                self.path2 = Label(text=str(self.Convert(arrets)), justify=LEFT)
+                self.rows += 1
+                self.path2.grid(row=self.rows, column=self.cols, sticky="w")
+            except:
+                pass
+        
+    def Convert(self, arret):
+        self.GestionAdresses.get_loc(arret)
+        return self.GestionAdresses.afficher()
 
 Main = UI(); Main.Display()
