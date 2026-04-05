@@ -48,7 +48,7 @@ https://github.com/mhucka/readmine/blob/main/README.md?plain=1
 Python
 
 # Modules
-[Tkinter](https://docs.python.org/fr/3/library/tkinter.html)
+[tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
