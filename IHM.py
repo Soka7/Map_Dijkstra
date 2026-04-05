@@ -57,7 +57,7 @@ class UI:
         ########
         
         # Bouton
-        self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get()))
+        self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get())) # La doc tkinter n'est pas à jour
         self.send.grid(row = 2, column=0, sticky="w")
         
         #
@@ -80,6 +80,7 @@ class UI:
         self.rows += 1
         self.path.grid(row=self.rows, column=self.cols, sticky="w")
 
+        ListeChemins = []
         for arrets in chemin:
             try:
                 Che = self.Convert(arrets)
@@ -88,9 +89,11 @@ class UI:
                 self.path2.grid(row=self.rows, column=self.cols, sticky="w")
                 print(Che, type(Che))
                 self.map.PlaceMarker([Che[1], Che[2]], str(Che[0]))
-                self.map.MAJ()
+                ListeChemins.append((Che[1], Che[2]))
             except:
                 pass
+        self.map.Trait(ListeChemins)
+        self.map.MAJ()
         
     def Convert(self, arret):
         self.GestionAdresses.get_loc(arret)

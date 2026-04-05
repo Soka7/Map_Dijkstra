@@ -1,2 +1,5 @@
 Soka7: tkinter UI
 Soka7: folium
+
+Yoaked: representation du graphe
+Yoaked: historique
