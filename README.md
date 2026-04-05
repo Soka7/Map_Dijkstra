@@ -2,10 +2,10 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&background=1f1f1f&center=true&vCenter=true&width=1000&height=75&lines=Dijkstra+Map;Please+consider+checking+the+sources;And+upvoting+the+project+of+course" alt="Typing SVG" /></a>
 </p>
 
-# Carte interactive
+# Interactive map
 **Mp6 TermD**
 
-Algorithme de Dijkstra appliqué à une map [folium](https://python-visualization.github.io/folium/latest/getting_started.html)
+Dijkstra algorithm applied to a map [folium](https://python-visualization.github.io/folium/latest/getting_started.html)
 
 **Developed by [Soka7](https://github.com/Soka7), [Yolked64](https://github.com/Yolked64)
 
@@ -13,20 +13,18 @@ Algorithme de Dijkstra appliqué à une map [folium](https://python-visualizatio
 
 ## 🚀 Infos
 
-```bash
-#None
-```
+As it is requested to display a folium map in tkinter we're gonna use a web engine in tkinter using [tkinterweb](https://pypi.org/project/tkinterweb/) for we know that folium is generating HTML and JavaScript.
 
-### Basiques
+### Basics
 ```bash
-# Installer les dependances
+# Install dependencies
 pip install -r requirements.txt
 ```
 [Thanks to](https://github.com/python-visualization/folium/blob/main/requirements.txt)
 
-### Basiques - dev
+### Basics - dev
 ```bash
-# Installer les dependances pour les devs
+# Install devs dependencies
 pip install -r requirements - dev.txt
 ```
 [Thanks to](https://github.com/python-visualization/folium/blob/main/requirements-dev.txt)
@@ -37,17 +35,17 @@ pip install -r requirements - dev.txt
 cat plan.txt
 ```
 
-### Référence README pour une lecture (et une correction) agréable.
+### README reference
 ```bash
 https://github.com/mhucka/readmine/blob/main/README.md?plain=1
 
 ```
 # Description
 
-# Outils/Languages
+# Tools/Languages
 Python
 
-# Modules
+# Libraries
 [tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
 [geopy](https://www.geeksforgeeks.org/python/python-calculate-distance-between-two-places-using-geopy/)
