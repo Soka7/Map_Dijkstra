@@ -34,6 +34,6 @@ def loadGraphe(filePath : str) -> Graphe_D:
     return graph
 
 g = loadGraphe("arrets.csv")
-print(getPath(g, "Le Cardo", "Le Croisy"))
+print(getPath(g, "Le Cardo", "Roche Maurice"))
 
 # :BUG: IT DOESN'T WORK FOR NAME THAT AREN'T IN THE ASCII TABLES like é,è,ë

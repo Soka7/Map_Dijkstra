@@ -1,6 +1,7 @@
 #Imports
 from tkinter import *
 from tkinter.ttk import *
+import os
 
 #Traceback (most recent call last):
 #  File "d:\Map_Dijkstra\IHM.py", line 18, in <module>
@@ -19,8 +20,6 @@ from tkinter.ttk import *
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # self.photo = PhotoImage(file=os.path.join(BASE_DIR, "homepage.png"))
 
-import os
-
 class UI:
     def __init__(self):
                 
@@ -30,6 +29,7 @@ class UI:
         
         self.fenetre = Tk()
         self.cadre = Frame(self.fenetre)
+        self.cadre.grid()
         self.fenetre.title("Home_Page")
         self.photo = PhotoImage(file=os.path.join(BASE_DIR, "homepage.ico"))
         self.logo = self.fenetre.iconphoto(False, self.photo) # Applies on each page ? ; photo
@@ -37,6 +37,20 @@ class UI:
         self.fenetre.geometry('300x250')
         
         ##########################
+        
+        #Entrées
+        
+        self.start = StringVar()
+        self.depart = Entry(self.cadre, textvariable = self.start)
+        self.depart.grid(row=0, column=0)
+        self.depart.insert(0, "Départ") #index ; str
+        
+        self.end = StringVar()
+        self.fin = Entry(self.cadre, textvariable = self.end)
+        self.fin.grid(row=1, column=0)
+        self.fin.insert(0, "Arrivée") #index ; str
+        
+        ########
         
     def Display(self):
         self.fenetre.mainloop()
