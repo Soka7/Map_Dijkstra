@@ -2,6 +2,10 @@
 from tkinter import *
 from tkinter.ttk import *
 import os
+from makeGraph import loadGraphe
+from graphePondere import Graphe_D
+from dijkstra import getPath
+import csv
 
 #Traceback (most recent call last):
 #  File "d:\Map_Dijkstra\IHM.py", line 18, in <module>
@@ -42,17 +46,24 @@ class UI:
         
         self.start = StringVar()
         self.depart = Entry(self.cadre, textvariable = self.start)
-        self.depart.grid(row=0, column=0)
+        self.depart.grid(row=0, column=0, sticky="w")
         self.depart.insert(0, "Départ") #index ; str
         
         self.end = StringVar()
         self.fin = Entry(self.cadre, textvariable = self.end)
-        self.fin.grid(row=1, column=0)
+        self.fin.grid(row=1, column=0, sticky="w")
         self.fin.insert(0, "Arrivée") #index ; str
         
         ########
         
+        self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get()))
+        self.send.grid(row = 2, column=0, sticky="w")
+        
     def Display(self):
         self.fenetre.mainloop()
+        
+    def DisplayPath(self, dep, arr):
+        self.path = Label(text=str(getPath(loadGraphe("arrets.csv"), dep, arr)))
+        self.path.grid(row=1, column=1, sticky="w")
 
 Main = UI(); Main.Display()

@@ -1,7 +1,7 @@
 from graphePondere import Graphe_D
 from dijkstra import getPath
 
-import csv 
+import csv
 
 def loadGraphe(filePath : str) -> Graphe_D:
     """
@@ -32,8 +32,5 @@ def loadGraphe(filePath : str) -> Graphe_D:
         graph.addLink(link[0], link[1], int(link[2]))
 
     return graph
-
-g = loadGraphe("arrets.csv")
-print(getPath(g, "Le Cardo", "Roche Maurice"))
 
 # :BUG: IT DOESN'T WORK FOR NAME THAT AREN'T IN THE ASCII TABLES like é,è,ë
