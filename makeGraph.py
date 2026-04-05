@@ -1,7 +1,7 @@
 from graphePondere import Graphe_D
 from dijkstra import getPath
 
-import csv 
+import csv
 
 def loadGraphe(filePath : str) -> Graphe_D:
     """
@@ -17,7 +17,7 @@ def loadGraphe(filePath : str) -> Graphe_D:
 
     fileContent : list = []
 
-    with open(filePath, newline = '') as csvfile:
+    with open(filePath, newline = '', encoding = 'utf-8') as csvfile:
         file = csv.reader(csvfile, delimiter = ',')
         for entry in file:
             if entry[0][0] == ' ':
@@ -33,7 +33,5 @@ def loadGraphe(filePath : str) -> Graphe_D:
 
     return graph
 
-g = loadGraphe("arrets.csv")
-print(getPath(g, "Le Cardo", "Le Croisy"))
-
 # :BUG: IT DOESN'T WORK FOR NAME THAT AREN'T IN THE ASCII TABLES like é,è,ë
+# Bug solved

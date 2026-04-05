@@ -1,11 +1,12 @@
 import geopy
 from geopy.geocoders import Nominatim
- 
-# Création d'un objet géocodeur Nominatim
-geolocator = Nominatim(user_agent="my_geocoder")
- 
-# Géocodage d'une adresse
-location = geolocator.geocode("Bac, Pays de la Loire, France")
- 
-# Affichage des informations de localisation
-print(f"Adresse: {location.address} Latitude: {location.latitude} Longitude: {location.latitude}")
+class adresse_:
+    def __init__(self):
+        self.geolocator = Nominatim(user_agent="my_geocoder")
+        
+    def get_loc(self, arret):
+        self.location = self.geolocator.geocode(f"{arret}, Pays de la Loire, France")
+
+    def afficher(self):
+        assert self.location, 'No location provided'
+        return((self.location.address, self.location.latitude, self.location.longitude))

@@ -31,6 +31,12 @@ pip install -r requirements - dev.txt
 ```
 [Thanks to](https://github.com/python-visualization/folium/blob/main/requirements-dev.txt)
 
+### Plan
+```bash
+# Voir le plan
+cat plan.txt
+```
+
 ### Référence README pour une lecture (et une correction) agréable.
 ```bash
 https://github.com/mhucka/readmine/blob/main/README.md?plain=1
@@ -42,7 +48,7 @@ https://github.com/mhucka/readmine/blob/main/README.md?plain=1
 Python
 
 # Modules
-[Tkinter](https://docs.python.org/fr/3/library/tkinter.html)
+[tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
