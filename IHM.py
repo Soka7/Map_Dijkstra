@@ -11,6 +11,8 @@ from geopy.geocoders import Nominatim
 from adresse import adresse_
 import folium
 from Map import Map_
+from math import sqrt
+from geopy.distance import geodesic
 
 #Prompts
 
@@ -36,7 +38,7 @@ class UI:
         self.cadre.grid()
         self.fenetre.title("Home_Page")
         self.photo = PhotoImage(file=os.path.join(BASE_DIR, "homepage.ico"))
-        self.logo = self.fenetre.iconphoto(False, self.photo) # Applies on each page ? ; photo
+        self.logo = self.fenetre.iconphoto(False, self.photo)                               # Applies on each page ? ; photo
         
         self.fenetre.geometry('300x250')
         
@@ -94,6 +96,17 @@ class UI:
                 pass
         self.map.Trait(ListeChemins)
         self.map.MAJ()
+        prec = None
+        dist = 0
+        for coos in self.map.trail_coordinates:
+            if prec == None:
+                prec = coos
+            else:
+                dist += geodesic(prec, coos).km                                             # Les docs du module
+                prec = coos
+        self.distance = Label(text=str(dist), justify=LEFT)
+        self.rows += 1
+        self.distance.grid(row=self.rows, column=self.cols, sticky="w")
         
     def Convert(self, arret):
         self.GestionAdresses.get_loc(arret)
