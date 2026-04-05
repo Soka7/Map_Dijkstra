@@ -9,16 +9,12 @@ import csv
 import geopy
 from geopy.geocoders import Nominatim
 from adresse import adresse_
+import folium
+from Map import Map_
 
-#Traceback (most recent call last):
-#  File "d:\Map_Dijkstra\IHM.py", line 18, in <module>
-#    Main = UI(); Main.Display()
-#           ^^^^
-#  File "d:\Map_Dijkstra\IHM.py", line 13, in __init__
-#    self.Logo = self.fenetre.iconphoto(True, self.photo)
-#                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2200, in wm_iconphoto
-#    self.tk.call('wm', 'iconphoto', self._w, "-default", *args)
+#Prompts
+
+#--------------------------------------------------------------------------
 #_tkinter.TclError: failed to create an iconphoto with image "homepage.png"
 
 # import os
@@ -26,6 +22,7 @@ from adresse import adresse_
 # # Chemin absolu basé sur l'emplacement du script
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # self.photo = PhotoImage(file=os.path.join(BASE_DIR, "homepage.png"))
+#--------------------------------------------------------------------------
 
 class UI:
     def __init__(self):
@@ -59,13 +56,19 @@ class UI:
         
         ########
         
+        # Bouton
         self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get()))
         self.send.grid(row = 2, column=0, sticky="w")
         
+        #
         self.GestionAdresses = adresse_()
         
+        #
         self.rows = 0
         self.cols = 1
+        
+        #Map
+        self.map = Map_()
         
     def Display(self):
         self.fenetre.mainloop()
@@ -79,9 +82,13 @@ class UI:
 
         for arrets in chemin:
             try:
-                self.path2 = Label(text=str(self.Convert(arrets)), justify=LEFT)
+                Che = self.Convert(arrets)
+                self.path2 = Label(text=str(Che), justify=LEFT)
                 self.rows += 1
                 self.path2.grid(row=self.rows, column=self.cols, sticky="w")
+                print(Che, type(Che))
+                self.map.PlaceMarker([Che[1], Che[2]], str(Che[0]))
+                self.map.MAJ()
             except:
                 pass
         

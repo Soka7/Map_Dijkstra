@@ -9,4 +9,4 @@ class adresse_:
 
     def afficher(self):
         assert self.location, 'No location provided'
-        return(f"Adresse: {self.location.address} Latitude: {self.location.latitude} Longitude: {self.location.longitude}")
+        return((self.location.address, self.location.latitude, self.location.longitude))
