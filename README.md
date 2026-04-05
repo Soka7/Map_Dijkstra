@@ -5,7 +5,7 @@
 # Interactive map
 **Mp6 TermD**
 
-Dijkstra algorithm applied to a map [folium](https://python-visualization.github.io/folium/latest/getting_started.html)
+Dijkstra algorithm applied to a [folium](https://python-visualization.github.io/folium/latest/getting_started.html) map
 
 **Developed by [Soka7](https://github.com/Soka7), [Yolked64](https://github.com/Yolked64)
 
