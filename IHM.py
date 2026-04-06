@@ -13,6 +13,7 @@ import folium
 from Map import Map_
 from math import sqrt
 from geopy.distance import geodesic
+import webview
 
 #Prompts
 
@@ -95,7 +96,6 @@ class UI:
             except:
                 pass
         self.map.Trait(ListeChemins)
-        self.map.MAJ()
         prec = None
         dist = 0
         for coos in self.map.trail_coordinates:
@@ -107,9 +107,14 @@ class UI:
         self.distance = Label(text=str(dist), justify=LEFT)
         self.rows += 1
         self.distance.grid(row=self.rows, column=self.cols, sticky="w")
+        self.map.MAJ()
+        self.MapWindow()
         
     def Convert(self, arret):
         self.GestionAdresses.get_loc(arret)
         return self.GestionAdresses.afficher()
-
+    
+    def MapWindow(self):
+        window = webview.create_window('Map', os.path.abspath('index.html'))                # Docs du module
+        webview.start()
 Main = UI(); Main.Display()

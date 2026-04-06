@@ -13,7 +13,7 @@ Dijkstra algorithm applied to a [folium](https://python-visualization.github.io/
 
 ## 🚀 Infos
 
-As it is requested to display a folium map in tkinter we're gonna use a web engine in tkinter using [tkinterweb](https://pypi.org/project/tkinterweb/) for we know that folium is generating HTML and JavaScript.
+As it is requested to display a folium map in tkinter we're gonna use a web engine in tkinter using [webview](https://pywebview.flowrl.com/guide/) for we know that folium is generating HTML and JavaScript.
 
 ### Basics
 ```bash
@@ -49,6 +49,8 @@ Python
 [tkinter](https://docs.python.org/fr/3/library/tkinter.html)
 
 [geopy](https://www.geeksforgeeks.org/python/python-calculate-distance-between-two-places-using-geopy/)
+
+[webview](https://pywebview.flowrl.com/guide/)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 

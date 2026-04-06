@@ -38,3 +38,4 @@ types-requests
 vega_datasets
 vincent
 wheel
+pywebview
