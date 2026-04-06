@@ -32,13 +32,11 @@ class UI:
                 
         #Architecture de la fenetre
         
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-        
         self.fenetre = Tk()
         self.cadre = Frame(self.fenetre)
         self.cadre.grid()
         self.fenetre.title("Home_Page")
-        self.photo = PhotoImage(file=os.path.join(BASE_DIR, "homepage.ico"))
+        self.photo = PhotoImage(file=os.path.abspath("homepage.ico"))
         self.logo = self.fenetre.iconphoto(False, self.photo)                               # Applies on each page ? ; photo
         
         self.fenetre.geometry('300x250')
