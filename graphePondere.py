@@ -1,4 +1,4 @@
-class Graphe_D:
+class WeightedGraph:
     '''Weighted graph, can be oriented or not.'''
     def __init__(self):
         """
@@ -6,94 +6,94 @@ class Graphe_D:
 
         :return: None
         """
-        self.adj : dict = {}
+        self.Adj : dict = {}
         return None
     
-    def affiche(self):
+    def Show(self):
         """
         Print each each node and its neighbors.
 
         :return: None
         """
-        for node in self.adj:
-            print (node, self.adj[node])
+        for Node in self.Adj:
+            print (Node, self.Adj[Node])
     
-    def addNode(self, node : any):
+    def AddNode(self, Node : any):
         """
         Add a node to the graph, orientedly.
 
-        :param node: Node name
-        :type node: any
+        :param Node: Node name
+        :type Node: any
 
         :return None
 
         :NOTE: Doesn't add the node if it already exists.
         """
-        if node not in self.adj:
-            self.adj[node] = {}
+        if Node not in self.Adj:
+            self.Adj[Node] = {}
         return None
    
-    def addLink(self, node1 : any, node2 : any, weight : float) -> None:
+    def AddLink(self, Node1 : any, Node2 : any, Weight : float) -> None:
         """
-        Add a link between 2 nodes with a wanted weight.
+        Add a link between 2 nodes with a wanted weight.\n
 
-        :param node1 The starting node
-        :type node1: any
-        :param node2: The ending node
-        :type node2: any
-        :param weight: The weight of the link between the 2 nodes
-        :type weight: float
+        :param Node1: The starting node
+        :type Node1: any
+        :param Node2: The ending node
+        :type Node2: any
+        :param Weight: The weight of the link between the 2 nodes
+        :type Weight: float
 
         :return None:
 
         :NOTE: If the nodes don't exist, they'll be created.
         :NOTE: It doesn't add the link if it already exists.
         """
-        if not node1 in self.adj:            
-            self.addNode(node1)
-        if not node2 in self.adj:
-            self.addNode(node2)
-        if not node2 in self.adj[node1]:
-            self.adj[node1][node2] = weight
+        if not Node1 in self.Adj:            
+            self.AddNode(Node1)
+        if not Node2 in self.Adj:
+            self.AddNode(Node2)
+        if not Node2 in self.Adj[Node1]:
+            self.Adj[Node1][Node2] = Weight
         return None
     
-    def isLinked(self, node1 : any, node2 : any) -> bool:
+    def IsLinked(self, Node1 : any, Node2 : any) -> bool:
         """
-        Verify if 2 nodes are linked.
+        Verify if 2 nodes are linked. \n
 
-        :param node1 The starting node
-        :type node1: any
-        :param node2: The ending node
-        :type node2: any
+        :param Node1: The starting node
+        :type Node1: any
+        :param Node2: The ending node
+        :type Node2: any
 
         :return: Whether or not they are linked
         :rtype: bool
         """
-        return node2 in self.adj[node1]
+        return Node2 in self.Adj[Node1]
     
-    def getNodes(self) -> list:
+    def GetNodes(self) -> list:
         """
         Get all the nodes of the graph.
         
         :return: A list containing all the nodes of the graph
         :rtype: list
         """
-        nodes : list = []
-        for node in self.adj:
-            nodes.append(node)
-            for element in self.getNeighbors(node):
-                if element not in nodes:
-                    nodes.append(element)
+        Nodes : list = []
+        for Node in self.Adj:
+            Nodes.append(Node)
+            for Neighbor in self.GetNeighbors(Node):
+                if Neighbor not in Nodes:
+                    Nodes.append(Neighbor)
         
-        return nodes
+        return Nodes
     
-    def getNeighbors(self, node : any) -> list:
+    def GetNeighbors(self, Node : any) -> list:
         """
         Return the neighbors of a node.
 
-        :param node: The node to get neighbors from
-        :type node: any
+        :param Node: The node to get neighbors from
+        :type Node: any
         :return: The list of neighbors
         :rtype: list
         """
-        return self.adj[node]
+        return self.Adj[Node]
