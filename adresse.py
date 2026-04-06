@@ -1,12 +1,35 @@
 import geopy
 from geopy.geocoders import Nominatim
-class adresse_:
-    def __init__(self):
-        self.geolocator = Nominatim(user_agent="my_geocoder")
-        
-    def get_loc(self, arret):
-        self.location = self.geolocator.geocode(f"{arret}, Pays de la Loire, France")
 
-    def afficher(self):
-        assert self.location, 'No location provided'
-        return((self.location.address, self.location.latitude, self.location.longitude))
+class Adress:
+    def __init__(self) -> None:
+        """
+        Create an adress object.\n
+        :return: None
+        """
+        self.GeoLocator : Nominatim = Nominatim(user_agent = "my_geocoder")
+        self.Location = None
+        return None
+        
+    def SetLocation(self, Stop : str) -> None:
+        """
+        Store the location of a wanted Stop.
+
+        :param Stop: The stop you want to store location of
+        :type Stop: str
+
+        :return: None
+        """
+        self.Location = self.GeoLocator.geocode(f"{Stop}, Pays de la Loire, France")
+        return None
+
+    def Show(self) -> tuple:
+        """
+        Give the adress, latitude and longitude of the stored location.
+
+        :return: Adress, Latitude, Longitude of the stored location 
+        :rtype: 3-uplet
+        """
+        assert self.Location, 'You need to provide a location first.'
+        Data : tuple = ((self.Location.address, self.Location.latitude, self.Location.longitude))
+        return Data

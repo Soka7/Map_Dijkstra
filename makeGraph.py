@@ -1,37 +1,34 @@
-from graphePondere import Graphe_D
-from dijkstra import getPath
+from graphePondere import WeightedGraph
+from dijkstra import GetPath
 
 import csv
 
-def loadGraphe(filePath : str) -> Graphe_D:
+def LoadGraph(FilePath : str) -> WeightedGraph:
     """
     Make a graph based on a csv file.
 
-    :param filePath: The relative path to the file
-    :type filePath: str
+    :param FilePath: The relative path to the file
+    :type FilePath: str
 
     :return: A graph with all the informations of the file
-    :rtype: Graphe_D
+    :rtype: WeightedGraph
     """
-    graph : Graphe_D = Graphe_D()
+    Graph : WeightedGraph = WeightedGraph()
 
-    fileContent : list = []
+    FileContent : list = []
 
-    with open(filePath, newline = '', encoding = 'utf-8') as csvfile:
-        file = csv.reader(csvfile, delimiter = ',')
-        for entry in file:
-            if entry[0][0] == ' ':
-                entry[0] = entry[0][1:]
-            if entry[1][0] == ' ':
-                entry[1] = entry[1][1:]
-            if entry[2][0] == ' ':
-                entry[2] = entry[2][1:]
-            fileContent.append(entry)
+    with open(FilePath, newline = '', encoding = 'utf-8') as CsvFile:
+        File = csv.reader(CsvFile, delimiter = ',')
+        for Entry in File:
+            if Entry[0][0] == ' ':
+                Entry[0] = Entry[0][1:]
+            if Entry[1][0] == ' ':
+                Entry[1] = Entry[1][1:]
+            if Entry[2][0] == ' ':
+                Entry[2] = Entry[2][1:]
+            FileContent.append(Entry)
 
-    for link in fileContent:
-        graph.addLink(link[0], link[1], int(link[2]))
+    for Link in FileContent:
+        Graph.AddLink(Link[0], Link[1], int(Link[2]))
 
-    return graph
-
-# :BUG: IT DOESN'T WORK FOR NAME THAT AREN'T IN THE ASCII TABLES like é,è,ë
-# Bug solved
+    return Graph

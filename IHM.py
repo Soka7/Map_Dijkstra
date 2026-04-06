@@ -2,14 +2,9 @@
 from tkinter import *
 from tkinter.ttk import *
 import os
-from makeGraph import loadGraphe
-from graphePondere import Graphe_D
-from dijkstra import getPath
-import csv
-import geopy
-from geopy.geocoders import Nominatim
-from adresse import adresse_
-import folium
+from makeGraph import LoadGraph
+from dijkstra import GetPath
+from adresse import Adress
 from Map import Map_
 from math import sqrt
 from geopy.distance import geodesic
@@ -62,7 +57,7 @@ class UI:
         self.send.grid(row = 2, column=0, sticky="w")
         
         #
-        self.GestionAdresses = adresse_()
+        self.GestionAdresses = Adress()
         
         #
         self.rows = 0
@@ -75,7 +70,7 @@ class UI:
         self.fenetre.mainloop()
         
     def DisplayPath(self, dep, arr):
-        pa = getPath(loadGraphe("arrets.csv"), dep, arr)
+        pa = GetPath(LoadGraph("arrets.csv"), dep, arr)
         chemin = pa[1]
         self.path = Label(text=str(chemin), justify=LEFT)
         self.rows += 1
@@ -109,8 +104,8 @@ class UI:
         self.MapWindow()
         
     def Convert(self, arret):
-        self.GestionAdresses.get_loc(arret)
-        return self.GestionAdresses.afficher()
+        self.GestionAdresses.SetLocation(arret)
+        return self.GestionAdresses.Show()
     
     def MapWindow(self):
         window = webview.create_window('Map', os.path.abspath('index.html'))                # Docs du module
