@@ -27,3 +27,6 @@ README clair, complet et efficace
 organisation et arborescence du projet clairs et explicites
 pertinence attributs/methodes
 lisibilite du code, clarte et variables explicites
+expliquer les "truc farfelus"
+centrer la camera en temps reel
+enlever les traces de debogage
