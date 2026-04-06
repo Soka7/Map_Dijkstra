@@ -1,5 +1,32 @@
-Soka7: tkinter UI
-Soka7: folium
+Soka7:
 
-Yoaked: representation du graphe
-Yoaked: historique
+folium                                                                  DONE
+IHM entree depart, arrivee                                              DONE
+IHM recuperer les coos gps des lieux                                    DONE
+IHM afficher le trajet correspondant et le temps total                  DONE
+IHM afficher la carte                                                   DONE
+recuperation auto des coos des velos via l'API Nantes metropole
+
+Yoaked:
+
+creation graphe avec csv                                                DONE
+meilleur chemin avec Dijkstra                                           DONE
+calculer le temps total                                                 DONE
+representation du graphe
+historique dans un fichier .txt
+representation visuelle du graphe dans le README.md
+gerer la connexion avec id relie à l'historique
+
+Soka7/Yoaked:
+
+citer les sources (web, IA)
+travail reparti equitablement et travail efficace par GIT               DONE
+doc precise de toutes les fonctions
+comms pertinents au fil du code (pas -> (peu ou trp))
+README clair, complet et efficace
+organisation et arborescence du projet clairs et explicites
+pertinence attributs/methodes
+lisibilite du code, clarte et variables explicites
+expliquer les "truc farfelus"
+centrer la camera en temps reel
+enlever les traces de debogage
