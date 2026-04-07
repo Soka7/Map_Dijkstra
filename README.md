@@ -60,3 +60,5 @@ Python
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique <br>
 Prompts sent to AIs will be written down
+
+![Prompt](Prompt.PNG)

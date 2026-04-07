@@ -9,6 +9,9 @@ from Map import Map_
 from math import sqrt
 from geopy.distance import geodesic
 import webview
+from API_Position_Velos import Positions
+import requests
+import csv
 
 #Prompts
 
@@ -66,6 +69,9 @@ class UI:
         #Map
         self.map = Map_()
         
+        # Base API
+        self.Base = Positions()
+        
     def Display(self):
         self.fenetre.mainloop()
         
@@ -84,7 +90,7 @@ class UI:
                 self.rows += 1
                 self.path2.grid(row=self.rows, column=self.cols, sticky="w")
                 print(Che, type(Che))
-                self.map.PlaceMarker([Che[1], Che[2]], str(Che[0]))
+                self.map.PlaceMarker([Che[1], Che[2]], str(Che[0]), "green")
                 ListeChemins.append((Che[1], Che[2]))
             except:
                 pass
@@ -108,6 +114,15 @@ class UI:
         return self.GestionAdresses.Show()
     
     def MapWindow(self):
+        pos = self.GetPositions()
+        for marker in pos:
+            ListMarker = [marker['lat'], marker['lon']]
+            self.map.PlaceMarker(ListMarker, "API's marker", "red")
+        self.map.MAJ()
         window = webview.create_window('Map', os.path.abspath('index.html'))                # Docs du module
         webview.start()
+        
+    def GetPositions(self):
+        return(self.Base.HttpRequest())
+        
 Main = UI(); Main.Display()
