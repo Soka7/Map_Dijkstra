@@ -52,6 +52,10 @@ Python
 
 [webview](https://pywebview.flowrl.com/guide/)
 
+# API
+
+[NantesMetropole](https://data.nantesmetropole.fr/api/explore/v2.1/console)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ![Dij](dijkstra.gif)
