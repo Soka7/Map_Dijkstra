@@ -2,15 +2,15 @@ import folium
 
 class Map_:
     def __init__(self):
-        self.m = folium.Map(location=(47, -1.5), zoom_start=14)
+        self.m = folium.Map(location=(47.2, -1.54), zoom_start=8)
         self.trail_coordinates = []
         
-    def PlaceMarker(self, locs: list, Titre: str):
+    def PlaceMarker(self, locs: list, Titre: str, Couleur: str):
         folium.Marker(
             location = locs,
             tooltip="Click me!",
             popup=Titre,
-            icon=folium.Icon(color="green"),
+            icon=folium.Icon(color=Couleur),
         ).add_to(self.m)
         
     def Trait(self, coos: list):

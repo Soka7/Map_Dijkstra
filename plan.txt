@@ -5,7 +5,7 @@ IHM entree depart, arrivee                                              DONE
 IHM recuperer les coos gps des lieux                                    DONE
 IHM afficher le trajet correspondant et le temps total                  DONE
 IHM afficher la carte                                                   DONE
-recuperation auto des coos des velos via l'API Nantes metropole
+recuperation auto des coos des velos via l'API Nantes metropole         DONE
 
 Yoaked:
 

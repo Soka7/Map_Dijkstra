@@ -52,6 +52,10 @@ Python
 
 [webview](https://pywebview.flowrl.com/guide/)
 
+# API
+
+[NantesMetropole](https://data.nantesmetropole.fr/api/explore/v2.1/console)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ![Dij](dijkstra.gif)
@@ -60,3 +64,5 @@ Python
 
 Utilisation de l'ia pour corriger certaines choses, mais reverification systematique <br>
 Prompts sent to AIs will be written down
+
+![Prompt](Prompt.PNG)
