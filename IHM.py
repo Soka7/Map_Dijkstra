@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter.ttk import *
 import os
 from makeGraph import LoadGraph
-from dijkstra import GetPath
+from dijkstra import GetPath, SavePath
 from adresse import Adress
 from Map import Map_
 from math import sqrt
@@ -78,6 +78,7 @@ class UI:
     def DisplayPath(self, dep, arr):
         pa = GetPath(LoadGraph("arrets.csv"), dep, arr)
         chemin = pa[1]
+        SavePath(pa, "Itinenaries.txt")
         self.path = Label(text=str(chemin), justify=LEFT)
         self.rows += 1
         self.path.grid(row=self.rows, column=self.cols, sticky="w")
