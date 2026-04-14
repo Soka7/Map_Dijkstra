@@ -77,3 +77,26 @@ def GetPath(Graph : WeightedGraph, Start : any, End : any) -> tuple:
 
     Path.reverse()
     return OptimalPathLenght, Path
+
+def SavePath(PathData : tuple, FilePath : str) -> None:
+    """
+    Store the path from a location to another in a txt file.
+
+    :param PathData: The path and it's lenght
+    :type PathData: 2-uplet
+    :param FilePath: The relative path to the file
+    :type FilePath: str
+    :rtype: None
+    """
+    # Source : https://www.w3schools.com/python/python_file_write.asp
+    Path : list = PathData[1]
+    Content : str = "\n---------- Itinerary ----------"
+    StopCounter : int = 1
+    for stop in Path:
+        Content += "\n" + "Stop N°" + str(StopCounter) + " : " + str(stop)
+        StopCounter += 1
+    Content += "\n" + "Total travel time : " + str(PathData[0]) + " minutes."
+    Content += "\n ------ End of Itinerary ------\n"
+    with open(FilePath, "a") as file:
+        file.write(Content)
+    return None

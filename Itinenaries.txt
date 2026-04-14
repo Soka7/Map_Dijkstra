@@ -1,0 +1,20 @@
+
+---------- Itinerary ----------
+Stop N°1 : Le Croisy
+Stop N°2 : Sautron centre
+Stop N°3 : Gare de Couëron
+Stop N°4 : Couëron centre
+Stop N°5 : Bac
+Total travel time : 66 minutes.
+ ------ End of Itinerary ------
+
+---------- Itinerary ----------
+Stop N°1 : Indre centre
+Stop N°2 : Gare d’Indre
+Stop N°3 : Saint-Herblain centre
+Stop N°4 : François Mitterand
+Stop N°5 : le Zénith
+Stop N°6 : Le Croisy
+Stop N°7 : Orvault centre
+Total travel time : 66 minutes.
+ ------ End of Itinerary ------
