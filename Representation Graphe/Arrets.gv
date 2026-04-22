@@ -1,0 +1,281 @@
+graph Arrets {
+	Bac [label=Bac]
+	"Couëron centre" [label="Couëron centre"]
+	Bac -- "Couëron centre"
+	"Couëron centre" -- Bac
+	"Gare de Couëron" [label="Gare de Couëron"]
+	"Couëron centre" -- "Gare de Couëron"
+	"Gare de Couëron" -- "Couëron centre"
+	"La Chabossière" [label="La Chabossière"]
+	"Couëron centre" -- "La Chabossière"
+	"La Chabossière" -- "Couëron centre"
+	"Indre centre" [label="Indre centre"]
+	"Couëron centre" -- "Indre centre"
+	"Indre centre" -- "Couëron centre"
+	"Gare d’Indre" [label="Gare d’Indre"]
+	"Indre centre" -- "Gare d’Indre"
+	"Gare d’Indre" -- "Indre centre"
+	"Saint-Herblain centre" [label="Saint-Herblain centre"]
+	"Gare d’Indre" -- "Saint-Herblain centre"
+	"Saint-Herblain centre" -- "Gare d’Indre"
+	"Sautron centre" [label="Sautron centre"]
+	"Gare de Couëron" -- "Sautron centre"
+	"Sautron centre" -- "Gare de Couëron"
+	"Gare de couëron" [label="Gare de couëron"]
+	"Gare de couëron" -- "La Chabossière"
+	"La Chabossière" -- "Gare de couëron"
+	"Les Hauts de Couëron" [label="Les Hauts de Couëron"]
+	"Sautron centre" -- "Les Hauts de Couëron"
+	"Les Hauts de Couëron" -- "Sautron centre"
+	"Saint-Herblain centre" -- "La Chabossière"
+	"La Chabossière" -- "Saint-Herblain centre"
+	"La Chabossière" -- "Les Hauts de Couëron"
+	"Les Hauts de Couëron" -- "La Chabossière"
+	"François Mitterand" [label="François Mitterand"]
+	"Les Hauts de Couëron" -- "François Mitterand"
+	"François Mitterand" -- "Les Hauts de Couëron"
+	"Saint-Herblain centre" -- "François Mitterand"
+	"François Mitterand" -- "Saint-Herblain centre"
+	"Le Croisy" [label="Le Croisy"]
+	"Sautron centre" -- "Le Croisy"
+	"Le Croisy" -- "Sautron centre"
+	"le Zénith" [label="le Zénith"]
+	"François Mitterand" -- "le Zénith"
+	"le Zénith" -- "François Mitterand"
+	"le Zénith" -- "Le Croisy"
+	"Le Croisy" -- "le Zénith"
+	"Roche Maurice" [label="Roche Maurice"]
+	"Indre centre" -- "Roche Maurice"
+	"Roche Maurice" -- "Indre centre"
+	"Mendès-France Bellevue" [label="Mendès-France Bellevue"]
+	"Saint-Herblain centre" -- "Mendès-France Bellevue"
+	"Mendès-France Bellevue" -- "Saint-Herblain centre"
+	"Gare de Chantenay" [label="Gare de Chantenay"]
+	"Roche Maurice" -- "Gare de Chantenay"
+	"Gare de Chantenay" -- "Roche Maurice"
+	"Roche Maurice" -- "Mendès-France Bellevue"
+	"Mendès-France Bellevue" -- "Roche Maurice"
+	"le Zénith" -- "Mendès-France Bellevue"
+	"Mendès-France Bellevue" -- "le Zénith"
+	"Mendès-France Bellevue" -- "Gare de Chantenay"
+	"Gare de Chantenay" -- "Mendès-France Bellevue"
+	"Orvault centre" [label="Orvault centre"]
+	"Le Croisy" -- "Orvault centre"
+	"Orvault centre" -- "Le Croisy"
+	"Le Cardo" [label="Le Cardo"]
+	"Orvault centre" -- "Le Cardo"
+	"Le Cardo" -- "Orvault centre"
+	"Le Croisy" -- "Le Cardo"
+	"Le Cardo" -- "Le Croisy"
+	"Sillon de Bretagne" [label="Sillon de Bretagne"]
+	"Le Croisy" -- "Sillon de Bretagne"
+	"Sillon de Bretagne" -- "Le Croisy"
+	"le Zénith" -- "Sillon de Bretagne"
+	"Sillon de Bretagne" -- "le Zénith"
+	"Parc de Procé" [label="Parc de Procé"]
+	"le Zénith" -- "Parc de Procé"
+	"Parc de Procé" -- "le Zénith"
+	"Sillon de Bretagne" -- "Le Cardo"
+	"Le Cardo" -- "Sillon de Bretagne"
+	"Beauséjour" [label="Beauséjour"]
+	"Sillon de Bretagne" -- "Beauséjour"
+	"Beauséjour" -- "Sillon de Bretagne"
+	"Beauséjour" -- "Le Cardo"
+	"Le Cardo" -- "Beauséjour"
+	"Beauséjour" -- "Parc de Procé"
+	"Parc de Procé" -- "Beauséjour"
+	"Mendès-France Bellevue" -- "Parc de Procé"
+	"Parc de Procé" -- "Mendès-France Bellevue"
+	"Gare de Chantenay" -- "Parc de Procé"
+	"Parc de Procé" -- "Gare de Chantenay"
+	"Gare Maritime" [label="Gare Maritime"]
+	"Gare de Chantenay" -- "Gare Maritime"
+	"Gare Maritime" -- "Gare de Chantenay"
+	"Pl. du Commerce" [label="Pl. du Commerce"]
+	"Gare Maritime" -- "Pl. du Commerce"
+	"Pl. du Commerce" -- "Gare Maritime"
+	"Parc de Procé" -- "Pl. du Commerce"
+	"Pl. du Commerce" -- "Parc de Procé"
+	"Rond-Point de Rennes" [label="Rond-Point de Rennes"]
+	"Parc de Procé" -- "Rond-Point de Rennes"
+	"Rond-Point de Rennes" -- "Parc de Procé"
+	"Le Cardo" -- "Rond-Point de Rennes"
+	"Rond-Point de Rennes" -- "Le Cardo"
+	"Porte de la Chapelle" [label="Porte de la Chapelle"]
+	"Le Cardo" -- "Porte de la Chapelle"
+	"Porte de la Chapelle" -- "Le Cardo"
+	"La Chapelle-sur-Erdre centre" [label="La Chapelle-sur-Erdre centre"]
+	"Le Cardo" -- "La Chapelle-sur-Erdre centre"
+	"La Chapelle-sur-Erdre centre" -- "Le Cardo"
+	"La Chapelle Aulnay" [label="La Chapelle Aulnay"]
+	"La Chapelle-sur-Erdre centre" -- "La Chapelle Aulnay"
+	"La Chapelle Aulnay" -- "La Chapelle-sur-Erdre centre"
+	"Babinière" [label="Babinière"]
+	"La Chapelle-sur-Erdre centre" -- "Babinière"
+	"Babinière" -- "La Chapelle-sur-Erdre centre"
+	"Porte de la Chapelle" -- "Babinière"
+	"Babinière" -- "Porte de la Chapelle"
+	"Pont de la Tortière" [label="Pont de la Tortière"]
+	"Porte de la Chapelle" -- "Pont de la Tortière"
+	"Pont de la Tortière" -- "Porte de la Chapelle"
+	"Rond-Point de Rennes" -- "Pont de la Tortière"
+	"Pont de la Tortière" -- "Rond-Point de Rennes"
+	"Rond-Point de Rennes" -- "Pl. du Commerce"
+	"Pl. du Commerce" -- "Rond-Point de Rennes"
+	"Pl. du Commerce" -- "Pont de la Tortière"
+	"Pont de la Tortière" -- "Pl. du Commerce"
+	"Gare Nord SNCF" [label="Gare Nord SNCF"]
+	"Pl. du Commerce" -- "Gare Nord SNCF"
+	"Gare Nord SNCF" -- "Pl. du Commerce"
+	"Rond-point de Paris" [label="Rond-point de Paris"]
+	"Gare Nord SNCF" -- "Rond-point de Paris"
+	"Rond-point de Paris" -- "Gare Nord SNCF"
+	"Rond-point de Paris" -- "Pont de la Tortière"
+	"Pont de la Tortière" -- "Rond-point de Paris"
+	Beaujoire [label=Beaujoire]
+	"Babinière" -- Beaujoire
+	Beaujoire -- "Babinière"
+	"Jonelière" [label="Jonelière"]
+	"Babinière" -- "Jonelière"
+	"Jonelière" -- "Babinière"
+	"Jonelière" -- "Pont de la Tortière"
+	"Pont de la Tortière" -- "Jonelière"
+	"Parc du Grand Blottereau" [label="Parc du Grand Blottereau"]
+	"Gare Nord SNCF" -- "Parc du Grand Blottereau"
+	"Parc du Grand Blottereau" -- "Gare Nord SNCF"
+	"Rond-point de Paris" -- "Parc du Grand Blottereau"
+	"Parc du Grand Blottereau" -- "Rond-point de Paris"
+	"Haluchère-Batignolles" [label="Haluchère-Batignolles"]
+	"Rond-point de Paris" -- "Haluchère-Batignolles"
+	"Haluchère-Batignolles" -- "Rond-point de Paris"
+	Beaujoire -- "Haluchère-Batignolles"
+	"Haluchère-Batignolles" -- Beaujoire
+	"Saint Joseph de Porterie" [label="Saint Joseph de Porterie"]
+	Beaujoire -- "Saint Joseph de Porterie"
+	"Saint Joseph de Porterie" -- Beaujoire
+	"La Chantrerie" [label="La Chantrerie"]
+	"Saint Joseph de Porterie" -- "La Chantrerie"
+	"La Chantrerie" -- "Saint Joseph de Porterie"
+	"La Fleuriaye" [label="La Fleuriaye"]
+	"La Chantrerie" -- "La Fleuriaye"
+	"La Fleuriaye" -- "La Chantrerie"
+	"Place du Vieux Cimetière" [label="Place du Vieux Cimetière"]
+	"La Fleuriaye" -- "Place du Vieux Cimetière"
+	"Place du Vieux Cimetière" -- "La Fleuriaye"
+	"La Belle Etoile" [label="La Belle Etoile"]
+	"Place du Vieux Cimetière" -- "La Belle Etoile"
+	"La Belle Etoile" -- "Place du Vieux Cimetière"
+	"Gare de Thouaré-sur-Loire" [label="Gare de Thouaré-sur-Loire"]
+	"La Belle Etoile" -- "Gare de Thouaré-sur-Loire"
+	"Gare de Thouaré-sur-Loire" -- "La Belle Etoile"
+	"Gare de Mauves sur Loire" [label="Gare de Mauves sur Loire"]
+	"Gare de Thouaré-sur-Loire" -- "Gare de Mauves sur Loire"
+	"Gare de Mauves sur Loire" -- "Gare de Thouaré-sur-Loire"
+	"La Minais" [label="La Minais"]
+	"Gare de Thouaré-sur-Loire" -- "La Minais"
+	"La Minais" -- "Gare de Thouaré-sur-Loire"
+	"La Madeleine" [label="La Madeleine"]
+	"Place du Vieux Cimetière" -- "La Madeleine"
+	"La Madeleine" -- "Place du Vieux Cimetière"
+	"La Madeleine" -- "La Minais"
+	"La Minais" -- "La Madeleine"
+	"Sainte-Luce-sur-Loire centre" [label="Sainte-Luce-sur-Loire centre"]
+	"Haluchère-Batignolles" -- "Sainte-Luce-sur-Loire centre"
+	"Sainte-Luce-sur-Loire centre" -- "Haluchère-Batignolles"
+	"Pont de Bellevue" [label="Pont de Bellevue"]
+	"Haluchère-Batignolles" -- "Pont de Bellevue"
+	"Pont de Bellevue" -- "Haluchère-Batignolles"
+	"Sainte-Luce-sur-Loire" [label="Sainte-Luce-sur-Loire"]
+	"Sainte-Luce-sur-Loire" -- "Pont de Bellevue"
+	"Pont de Bellevue" -- "Sainte-Luce-sur-Loire"
+	"La Minais" -- "Pont de Bellevue"
+	"Pont de Bellevue" -- "La Minais"
+	"Parc du Grand Blottereau" -- "Pont de Bellevue"
+	"Pont de Bellevue" -- "Parc du Grand Blottereau"
+	"Porte de Goulaine" [label="Porte de Goulaine"]
+	"Pont de Bellevue" -- "Porte de Goulaine"
+	"Porte de Goulaine" -- "Pont de Bellevue"
+	Grignon [label=Grignon]
+	"Porte de Goulaine" -- Grignon
+	Grignon -- "Porte de Goulaine"
+	"La Herdrie" [label="La Herdrie"]
+	Grignon -- "La Herdrie"
+	"La Herdrie" -- Grignon
+	"Gare de Vertou Nord" [label="Gare de Vertou Nord"]
+	"La Herdrie" -- "Gare de Vertou Nord"
+	"Gare de Vertou Nord" -- "La Herdrie"
+	"Porte de Goulaine" -- "Gare de Vertou Nord"
+	"Gare de Vertou Nord" -- "Porte de Goulaine"
+	"Gare St Sébastien Pas enchantés" [label="Gare St Sébastien Pas enchantés"]
+	"Porte de Goulaine" -- "Gare St Sébastien Pas enchantés"
+	"Gare St Sébastien Pas enchantés" -- "Porte de Goulaine"
+	"Gare St Sébastien Pas enchantés" -- "Gare de Vertou Nord"
+	"Gare de Vertou Nord" -- "Gare St Sébastien Pas enchantés"
+	"Porte de Vertou" [label="Porte de Vertou"]
+	"Gare St Sébastien Pas enchantés" -- "Porte de Vertou"
+	"Porte de Vertou" -- "Gare St Sébastien Pas enchantés"
+	"Gréneraie" [label="Gréneraie"]
+	"Gare St Sébastien Pas enchantés" -- "Gréneraie"
+	"Gréneraie" -- "Gare St Sébastien Pas enchantés"
+	"Vertou centre" [label="Vertou centre"]
+	"Gare de Vertou Nord" -- "Vertou centre"
+	"Vertou centre" -- "Gare de Vertou Nord"
+	"Gare de Vertou centre" [label="Gare de Vertou centre"]
+	"Gare de Vertou centre" -- "Porte de Vertou"
+	"Porte de Vertou" -- "Gare de Vertou centre"
+	"Vertou centre" -- "Porte de Vertou"
+	"Porte de Vertou" -- "Vertou centre"
+	"Gréneraie" -- "Porte de Vertou"
+	"Porte de Vertou" -- "Gréneraie"
+	"Porte de Rezé" [label="Porte de Rezé"]
+	"Porte de Vertou" -- "Porte de Rezé"
+	"Porte de Rezé" -- "Porte de Vertou"
+	"Trois Moulins" [label="Trois Moulins"]
+	"Porte de Vertou" -- "Trois Moulins"
+	"Trois Moulins" -- "Porte de Vertou"
+	"Sorinières centre" [label="Sorinières centre"]
+	"Vertou centre" -- "Sorinières centre"
+	"Sorinières centre" -- "Vertou centre"
+	"Sorinières centre" -- "Porte de Rezé"
+	"Porte de Rezé" -- "Sorinières centre"
+	"Porte de Rezé" -- "Trois Moulins"
+	"Trois Moulins" -- "Porte de Rezé"
+	"La Trocardière" [label="La Trocardière"]
+	"Porte de Rezé" -- "La Trocardière"
+	"La Trocardière" -- "Porte de Rezé"
+	Neustrie [label=Neustrie]
+	"Porte de Rezé" -- Neustrie
+	Neustrie -- "Porte de Rezé"
+	Pirmil [label=Pirmil]
+	"Gréneraie" -- Pirmil
+	Pirmil -- "Gréneraie"
+	Pirmil -- "Pl. du Commerce"
+	"Pl. du Commerce" -- Pirmil
+	Pirmil -- "Trois Moulins"
+	"Trois Moulins" -- Pirmil
+	Trentemoult [label=Trentemoult]
+	Pirmil -- Trentemoult
+	Trentemoult -- Pirmil
+	"Palais des Sports de Beaulieu" [label="Palais des Sports de Beaulieu"]
+	"Parc du Grand Blottereau" -- "Palais des Sports de Beaulieu"
+	"Palais des Sports de Beaulieu" -- "Parc du Grand Blottereau"
+	"Hangar à Bananes" [label="Hangar à Bananes"]
+	"Palais des Sports de Beaulieu" -- "Hangar à Bananes"
+	"Hangar à Bananes" -- "Palais des Sports de Beaulieu"
+	"Trois Moulins" -- "La Trocardière"
+	"La Trocardière" -- "Trois Moulins"
+	"La Trocardière" -- Trentemoult
+	Trentemoult -- "La Trocardière"
+	"La Trocardière" -- Neustrie
+	Neustrie -- "La Trocardière"
+	Trentemoult -- Neustrie
+	Neustrie -- Trentemoult
+	"Bouguenais centre" [label="Bouguenais centre"]
+	Trentemoult -- "Bouguenais centre"
+	"Bouguenais centre" -- Trentemoult
+	Neustrie -- "Bouguenais centre"
+	"Bouguenais centre" -- Neustrie
+	"Aéroport Nantes Atlantique" [label="Aéroport Nantes Atlantique"]
+	Neustrie -- "Aéroport Nantes Atlantique"
+	"Aéroport Nantes Atlantique" -- Neustrie
+}

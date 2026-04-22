@@ -1,5 +1,6 @@
 altair>=5.0.0
 cartopy
+graphviz
 check-manifest
 descartes
 fiona

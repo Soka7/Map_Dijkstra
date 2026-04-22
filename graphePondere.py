@@ -1,24 +1,29 @@
+from graphviz import *
+
 class WeightedGraph:
     '''Weighted graph, can be oriented or not.'''
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Init the attribute to an empty dictionary
 
         :return: None
         """
         self.Adj : dict = {}
+        self.Dot = Graph("Arrets")
+        self.Dot.format = 'png'
         return None
     
-    def Show(self):
+    def Show(self) -> None:
         """
-        Print each each node and its neighbors.
+        Use graphviz to make a png of the graph
 
         :return: None
         """
-        for Node in self.Adj:
-            print (Node, self.Adj[Node])
+        self.Dot.render(directory = 'Representation Graphe').replace('\\', '/')
+        'Representation Graphe/hello.gv.png'
+        return None
     
-    def AddNode(self, Node : any):
+    def AddNode(self, Node : any) -> None:
         """
         Add a node to the graph, orientedly.
 
@@ -31,6 +36,7 @@ class WeightedGraph:
         """
         if Node not in self.Adj:
             self.Adj[Node] = {}
+            self.Dot.node(Node, Node)
         return None
    
     def AddLink(self, Node1 : any, Node2 : any, Weight : float) -> None:
@@ -55,6 +61,7 @@ class WeightedGraph:
             self.AddNode(Node2)
         if not Node2 in self.Adj[Node1]:
             self.Adj[Node1][Node2] = Weight
+            self.Dot.edge(Node1, Node2)
         return None
     
     def IsLinked(self, Node1 : any, Node2 : any) -> bool:

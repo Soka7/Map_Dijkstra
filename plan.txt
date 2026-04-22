@@ -12,9 +12,9 @@ Yoaked:
 creation graphe avec csv                                                DONE
 meilleur chemin avec Dijkstra                                           DONE
 calculer le temps total                                                 DONE
-representation du graphe
-historique dans un fichier .txt
-representation visuelle du graphe dans le README.md
+representation du graphe                                                DONE
+historique dans un fichier .txt                                         DONE
+representation visuelle du graphe dans le README.md                     
 gerer la connexion avec id relie à l'historique
 
 Soka7/Yoaked:
