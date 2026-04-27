@@ -9,6 +9,10 @@ Dijkstra algorithm applied to a [folium](https://python-visualization.github.io/
 
 **Developed by [Soka7](https://github.com/Soka7), [Yolked64](https://github.com/Yolked64)
 
+## Representation
+
+![Visualization of the graph](https://github.com/Soka7/Map_Dikstra/blob/main/Representation Graphe/Arrets.gv.png?raw=true)
+
 ## ✨Features
 
 ## 🚀 Infos
