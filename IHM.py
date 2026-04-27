@@ -52,12 +52,17 @@ class UI:
         self.fin = Entry(self.cadre, textvariable = self.end)
         self.fin.grid(row=1, column=0, sticky="w")
         self.fin.insert(0, "Arrivée") #index ; str
+
+        self.LoginID = StringVar()
+        self.LoginButton = Entry(self.cadre, textvariable = self.LoginID)
+        self.LoginButton.grid(row = 2, column = 0, sticky = 'w')
+        self.LoginButton.insert(0, "Identifiant")
         
         ########
         
         # Bouton
         self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get())) # La doc tkinter n'est pas à jour
-        self.send.grid(row = 2, column=0, sticky="w")
+        self.send.grid(row = 3, column=0, sticky="w")
         
         #
         self.GestionAdresses = Adress()
@@ -78,7 +83,7 @@ class UI:
     def DisplayPath(self, dep, arr):
         pa = GetPath(LoadGraph("arrets.csv"), dep, arr)
         chemin = pa[1]
-        SavePath(pa, "Itinenaries.txt")
+        SavePath(pa, "Itinenaries/" + self.LoginID.get() + ".txt")
         self.path = Label(text=str(chemin), justify=LEFT)
         self.rows += 1
         self.path.grid(row=self.rows, column=self.cols, sticky="w")
