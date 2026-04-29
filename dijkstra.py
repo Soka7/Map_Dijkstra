@@ -97,6 +97,8 @@ def SavePath(PathData : tuple, FilePath : str) -> None:
         StopCounter += 1
     Content += "\n" + "Total travel time : " + str(PathData[0]) + " minutes."
     Content += "\n ------ End of Itinerary ------\n"
-    with open(FilePath, "a") as file:
-        file.write(Content)
+    
+    File = open(FilePath, "a")
+    File.write(Content)
+    File.close()
     return None

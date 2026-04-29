@@ -14,8 +14,8 @@ meilleur chemin avec Dijkstra                                           DONE
 calculer le temps total                                                 DONE
 representation du graphe                                                DONE
 historique dans un fichier .txt                                         DONE
-representation visuelle du graphe dans le README.md                     
-gerer la connexion avec id relie à l'historique
+representation visuelle du graphe dans le README.md                     DONE
+gerer la connexion avec id relie à l'historique                         DONE
 
 Soka7/Yoaked:
 
