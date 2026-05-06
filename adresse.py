@@ -7,7 +7,7 @@ class Adress:
         Create an adress object.\n
         :return: None
         """
-        self.GeoLocator : Nominatim = Nominatim(user_agent = "my_geocoder")
+        self.GeoLocator : Nominatim = Nominatim(user_agent = "my_geocoder")     # user_agent = identifiant pour que la requete soit acceptee; Nominatim = classe; https://geopy.readthedocs.io/en/stable/
         self.Location = None
         return None
         

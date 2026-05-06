@@ -1,4 +1,4 @@
-import folium
+import folium                                                                       #https://python-visualization.github.io/folium/latest/getting_started.html
 
 class Map_:
     def __init__(self):

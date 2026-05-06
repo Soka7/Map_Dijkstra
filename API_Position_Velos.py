@@ -8,8 +8,8 @@ class Positions:
     def HttpRequest(self):
         # <Response [200]>: Success
         Reponse = requests.get("https://data.nantesmetropole.fr/api/explore/v2.1/catalog/datasets/244400404_stations-velos-libre-service-nantes-metropole/records")
-        print(Reponse)
-        Decoded = Reponse.json()
+        print(Reponse)                                                      # Un objet de classe
+        Decoded = Reponse.json()                                            # json -> dico python; https://pypi.org/project/requests/
         for key, value in Decoded.items():
             print(key, ":", value)
             if key == "results":

@@ -10,7 +10,6 @@ from math import sqrt
 from geopy.distance import geodesic
 import webview
 from API_Position_Velos import Positions
-import requests
 import csv
 
 #Prompts
@@ -34,7 +33,7 @@ class UI:
         self.cadre = Frame(self.fenetre)
         self.cadre.grid()
         self.fenetre.title("Home_Page")
-        self.photo = PhotoImage(file=os.path.abspath("homepage.ico"))
+        self.photo = PhotoImage(file="homepage.ico")
         self.logo = self.fenetre.iconphoto(False, self.photo)                               # Applies on each page ? ; photo
         
         self.fenetre.geometry('300x250')
@@ -53,7 +52,7 @@ class UI:
         self.fin.grid(row=1, column=0, sticky="w")
         self.fin.insert(0, "Arrivée") #index ; str
 
-        self.LoginID = StringVar()
+        self.LoginID = StringVar()                                                                          # classe; https://www.tresfacile.net/la-classe-stringvar-python-tkinter/
         self.LoginButton = Entry(self.cadre, textvariable = self.LoginID)
         self.LoginButton.grid(row = 2, column = 0, sticky = 'w')
         self.LoginButton.insert(0, "Identifiant")
@@ -107,7 +106,7 @@ class UI:
             if prec == None:
                 prec = coos
             else:
-                dist += geodesic(prec, coos).km                                             # Les docs du module
+                dist += geodesic(prec, coos).km                                             # dico avec differentes unites; https://www.geeksforgeeks.org/python/python-calculate-distance-between-two-places-using-geopy/
                 prec = coos
         self.distance = Label(text=str(dist), justify=LEFT)
         self.rows += 1
@@ -125,7 +124,7 @@ class UI:
             ListMarker = [marker['lat'], marker['lon']]
             self.map.PlaceMarker(ListMarker, "API's marker", "red")
         self.map.MAJ()
-        window = webview.create_window('Map', os.path.abspath('index.html'))                # Docs du module
+        window = webview.create_window('Map', os.path.abspath('index.html'))                # https://pywebview.flowrl.com/guide/
         webview.start()
         
     def GetPositions(self):
