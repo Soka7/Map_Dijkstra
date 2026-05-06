@@ -1,0 +1,15 @@
+cartopy
+graphviz
+check-manifest
+geodatasets
+geographiclib
+ipykernel
+mypy
+pillow
+pre-commit
+pycodestyle
+pytest
+scipy
+setuptools<82
+types-requests
+pywebview

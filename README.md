@@ -13,30 +13,30 @@ Dijkstra algorithm applied to a [folium](https://python-visualization.github.io/
 
 ![image alt](https://github.com/Soka7/Map_Dijkstra/blob/a8181b98d2434ce24a5f7f198f625463f2c85e12/Representation%20Graphe/Arrets.gv.png)
 
-## ✨Features
-
 ## 🚀 Infos
 
 As it is requested to display a folium map in tkinter we're gonna use a web engine in tkinter using [webview](https://pywebview.flowrl.com/guide/) for we know that folium is generating HTML and JavaScript.
 
+WARNING ! If the code bugs in the first place, just run it once or twice again, should work.
+
 ### Basics
 ```bash
 # Install dependencies
-pip install -r requirements.txt
+pip install -r TextFiles/requirements.txt
 ```
 [Thanks to](https://github.com/python-visualization/folium/blob/main/requirements.txt)
 
 ### Basics - dev
 ```bash
 # Install devs dependencies
-pip install -r requirements - dev.txt
+pip install -r TextFiles/requirements - dev.txt
 ```
 [Thanks to](https://github.com/python-visualization/folium/blob/main/requirements-dev.txt)
 
 ### Plan
 ```bash
 # Seeing the plan
-cat plan.txt
+cat TextFiles/plan.txt
 ```
 
 ### README reference

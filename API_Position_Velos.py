@@ -6,6 +6,11 @@ class Positions:
         self.ListeCoos = []
     
     def HttpRequest(self):
+        """
+        Requete a l API Nantes metropole
+        
+        return: self.ListeCoos
+        """
         # <Response [200]>: Success
         Reponse = requests.get("https://data.nantesmetropole.fr/api/explore/v2.1/catalog/datasets/244400404_stations-velos-libre-service-nantes-metropole/records")
         print(Reponse)                                                      # Un objet de classe

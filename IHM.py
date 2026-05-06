@@ -34,9 +34,13 @@ class UI:
         self.cadre.grid()
         self.fenetre.title("Home_Page")
         self.photo = PhotoImage(file="homepage.ico")
-        self.logo = self.fenetre.iconphoto(False, self.photo)                               # Applies on each page ? ; photo
+        self.logo = self.fenetre.iconphoto(False, self.photo)                                               # Applies on each page ? ; photo
         
         self.fenetre.geometry('300x250')
+
+        #
+        self.rows = 0
+        self.cols = 1
         
         ##########################
         
@@ -57,29 +61,41 @@ class UI:
         self.LoginButton.grid(row = 2, column = 0, sticky = 'w')
         self.LoginButton.insert(0, "Identifiant")
         
-        ########
+        ######## Creation outils de localisation
         
-        # Bouton
+        # Creation Bouton
         self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get())) # La doc tkinter n'est pas à jour
         self.send.grid(row = 3, column=0, sticky="w")
         
         #
         self.GestionAdresses = Adress()
         
-        #
-        self.rows = 0
-        self.cols = 1
-        
-        #Map
+        # Map
         self.map = Map_()
         
         # Base API
         self.Base = Positions()
         
     def Display(self):
+        """
+        Loop la fonction qui utilise tkinter
+        
+        return: None
+        """
         self.fenetre.mainloop()
+
+        return None
         
     def DisplayPath(self, dep, arr):
+        """
+        Affiche le chemin calcule
+        
+        :type dep: str
+        :type arr: str
+
+        return: None
+        """
+
         pa = GetPath(LoadGraph("arrets.csv"), dep, arr)
         chemin = pa[1]
         SavePath(pa, "Itinenaries/" + self.LoginID.get() + ".txt")
@@ -113,8 +129,18 @@ class UI:
         self.distance.grid(row=self.rows, column=self.cols, sticky="w")
         self.map.MAJ()
         self.MapWindow()
+
+        return None
         
     def Convert(self, arret):
+        """
+        Docstring pour Convert
+        
+        :param self: Description
+        :param arret: Description
+
+        return: self.GestionAdresses.Show()
+        """
         self.GestionAdresses.SetLocation(arret)
         return self.GestionAdresses.Show()
     
@@ -128,6 +154,11 @@ class UI:
         webview.start()
         
     def GetPositions(self):
+        """
+        Avoir les coordonnees de la base de Nantes metropole
+
+        return: self.Base.HttpRequest()
+        """
         return(self.Base.HttpRequest())
         
 Main = UI(); Main.Display()
