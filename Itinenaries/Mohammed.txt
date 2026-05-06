@@ -1,0 +1,9 @@
+
+---------- Itinerary ----------
+Stop N°1 : Bac
+Stop N°2 : Couëron centre
+Stop N°3 : Gare de Couëron
+Stop N°4 : Sautron centre
+Stop N°5 : Le Croisy
+Total travel time : 66 minutes.
+ ------ End of Itinerary ------

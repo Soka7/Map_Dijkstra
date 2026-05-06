@@ -1,6 +1,7 @@
 from graphePondere import WeightedGraph
 from dijkstra import GetPath
 
+import unicodedata
 import csv
 
 def LoadGraph(FilePath : str) -> WeightedGraph:
@@ -29,6 +30,6 @@ def LoadGraph(FilePath : str) -> WeightedGraph:
             FileContent.append(Entry)
 
     for Link in FileContent:
-        Graph.AddLink(Link[0], Link[1], int(Link[2]))
+        Graph.AddLink(unicodedata.normalize('NFKD', Link[0]).encode('ascii', 'ignore'), unicodedata.normalize('NFKD', Link[1]).encode('ascii', 'ignore'), int(Link[2])) # https://docs.python.org/3/library/unicodedata.html
 
     return Graph
