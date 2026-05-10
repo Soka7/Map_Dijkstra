@@ -25,3 +25,19 @@ Stop NÂ°4 : CouÃ«ron centre
 Stop NÂ°5 : Bac
 Total travel time : 66 minutes.
  ------ End of Itinerary ------
+
+---------- Itinerary ----------
+Stop N°1 : Bac
+Stop N°2 : Couëron centre
+Stop N°3 : Gare de Couëron
+Stop N°4 : Sautron centre
+Stop N°5 : Le Croisy
+Total travel time : 66 minutes.
+ ------ End of Itinerary ------
+
+---------- Itinerary ----------
+Stop N°1 : La Chabossiere
+Stop N°2 : Coueron centre
+Stop N°3 : Gare de Coueron
+Total travel time : 21 minutes.
+ ------ End of Itinerary ------

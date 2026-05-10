@@ -2,7 +2,7 @@
 from tkinter import *
 from tkinter.ttk import *
 import os
-from makeGraph import LoadGraph
+from makeGraph import LoadGraph, ConvertStringToASCII
 from dijkstra import GetPath, SavePath
 from adresse import Adress
 from Map import Map_
@@ -64,7 +64,7 @@ class UI:
         ######## Creation outils de localisation
         
         # Creation Bouton
-        self.send = Button(self.cadre, command=lambda:self.DisplayPath(self.depart.get(), self.fin.get())) # La doc tkinter n'est pas à jour
+        self.send = Button(self.cadre, command=lambda:self.DisplayPath(ConvertStringToASCII(self.depart.get()), ConvertStringToASCII(self.fin.get()))) # La doc tkinter n'est pas à jour; https://www.geeksforgeeks.org/python/convert-a-string-to-utf-8-in-python/   ; https://docs.python.org/3/library/unicodedata.html
         self.send.grid(row = 3, column=0, sticky="w")
         
         #
